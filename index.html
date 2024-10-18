@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripAdvisor Clone</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" >
+
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold text-green-500">TripAdvisor</a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#" class="hover:text-green-500">Home</a></li>
+        <li><a href="#" class="hover:text-green-500">Destinations</a></li>
+        <li><a href="#" class="hover:text-green-500">Reviews</a></li>
+        <li><a href="#" class="hover:text-green-500">Contact</a></li>
+      </ul>
+      <button class=" md:hidden p-2 focus:outline-none text-green-500">
+        <svg class="w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" ></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <form>
+      <div class="flex items-center border-b border-teal-500 py-2">
+        <input
+          class="appearance-none bg-transparent border-none w-full text-green-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+          type="text" placeholder="Search destinations, hotels..." aria-label="Search">
+        <button
+          class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+          type="button">
+          Search
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-screen" style="background-image: url('./images/travel\ image.jpg');>
+        <div class=" flex items-center justify-center h-full bg-black bg-opacity-50>
+    <div class="text-center text-white">
+      <h1 class="text-5xl font-bold">Explore the World</h1>
+      <p class="mt-4 text-lg">Find the best places to visit and share your experiences.</p>
+      <a href="#"
+        class="mt-8 inline-block px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600">Explore
+        Now</a>
+    </div>
+    </div>
+  </section>
+
+  <!-- Popular Destinations -->
+  <section class="container mx-auto px-4 py-12">
+    <h2 class="font-bold mt-5  text-center text-3xl">Popular Destinations</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./images/travel4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h3 class="font-bold text-xl">Paris, France</h3>
+        <p class="mt-2 text-gray-600">The city of lights and love.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./images/travel2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h3 class="font-bold text-xl">Paris, France</h3>
+        <p class="mt-2 text-gray-600">The city of lights and love.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./images/travel3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h3 class="font-bold text-xl">Paris, France</h3>
+        <p class="mt-2 text-gray-600">The city of lights and love.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./images/travel4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h3 class="font-bold text-xl">Paris, France</h3>
+        <p class="mt-2 text-gray-600">The city of lights and love.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Hotels -->
+  <section class="container mx-auto px-4 py-12">
+    <h2 class="font-bold mt-5  text-center text-3xl">Hotels</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./images/food6.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h3 class="font-bold text-xl">Grand Hotel</h3>
+        <p class="mt-2 text-gray-600">Located in the heart of the city with stunning views.</p>
+        <div class="mt-4">
+          <span class="text-yellow-500">
+            ★★★★☆(200 reviews)<br>
+            <span
+              class="inline-block bg-green-500 text-white px-3 py-1 text-sm font-semibold mr-2 mb-2">$150/night</span>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</button>
+            <span class="text-gray-600 text-sm"></span>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./images/food3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h3 class="font-bold text-xl">Grand Hotel</h3>
+        <p class="mt-2 text-gray-600">Located in the heart of the city with stunning views.</p>
+        <div class="mt-4">
+          <span class="text-yellow-500">
+            ★★★★☆(200 reviews)<br>
+            <span
+              class="inline-block bg-green-500 text-white px-3 py-1 text-sm font-semibold mr-2 mb-2">$150/night</span>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</button>
+            <span class="text-gray-600 text-sm"></span>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./images/food2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h3 class="font-bold text-xl">Grand Hotel</h3>
+        <p class="mt-2 text-gray-600">Located in the heart of the city with stunning views.</p>
+        <div class="mt-4">
+          <span class="text-yellow-500">
+            ★★★★☆(200 reviews)<br>
+            <span
+              class="inline-block bg-green-500 text-white px-3 py-1 text-sm font-semibold mr-2 mb-2">$150/night</span>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</button>
+            <span class="text-gray-600 text-sm"></span>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./images/food4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h3 class="font-bold text-xl">Grand Hotel</h3>
+        <p class="mt-2 text-gray-600">Located in the heart of the city with stunning views.</p>
+        <div class="mt-4">
+          <span class="text-yellow-500">
+            ★★★★☆(200 reviews)<br>
+            <span
+              class="inline-block bg-green-500 text-white px-3 py-1 text-sm font-semibold mr-2 mb-2">$150/night</span>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Book Now</button>
+            <span class="text-gray-600 text-sm"></span>
+        </div>
+      </div>
+  </section>
+
+  <!-- Reviews Section -->
+
+  <section class="container mx-auto px-4 py-12">
+    <h2 class="font-bold mt-5  text-center text-3xl">Traveler Reviews</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./images/travel4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h3 class="font-bold text-xl">Paris, France</h3>
+        <p class="mt-2 text-gray-600">The city of lights and love.</p>
+        <div class="mt-4">
+          <span class="text-green-500 font-bold">John Doe</span>
+          <span class="text-gray-600">- New York, USA</span>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./images/travel2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h3 class="font-bold text-xl">Paris, France</h3>
+        <p class="mt-2 text-gray-600">The city of lights and love.</p>
+        <div class="mt-4">
+          <span class="text-green-500 font-bold">John Doe</span>
+          <span class="text-gray-600">- New York, USA</span>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./images/travel3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h3 class="font-bold text-xl">Paris, France</h3>
+        <p class="mt-2 text-gray-600">The city of lights and love.</p>
+        <div class="mt-4">
+          <span class="text-green-500 font-bold">John Doe</span>
+          <span class="text-gray-600">- New York, USA</span>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="./images/travel4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h3 class="font-bold text-xl">Paris, France</h3>
+        <p class="mt-2 text-gray-600">The city of lights and love.</p>
+        <div class="mt-4">
+          <span class="text-green-500 font-bold">John Doe</span>
+          <span class="text-gray-600">- New York, USA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Footer -->
+
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Company Info -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Company</h3>
+          <ul>
+            <li><a href="#" class="hover:text-gray-400">About Us</a></li>
+            <li><a href="#" class="hover:text-gray-400">Careers</a></li>
+            <li><a href="#" class="hover:text-gray-400">Press</a></li>
+            <li><a href="#" class="hover:text-gray-400">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Explore -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Explore</h3>
+          <ul>
+            <li><a href="#" class="hover:text-gray-400">Destinations</a></li>
+            <li><a href="#" class="hover:text-gray-400">Hotels</a></li>
+            <li><a href="#" class="hover:text-gray-400">Flights</a></li>
+            <li><a href="#" class="hover:text-gray-400">Things to Do</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Support</h3>
+          <ul>
+            <li><a href="#" class="hover:text-gray-400">Contact Us</a></li>
+            <li><a href="#" class="hover:text-gray-400">FAQs</a></li>
+            <li><a href="#" class="hover:text-gray-400">Terms & Conditions</a></li>
+            <li><a href="#" class="hover:text-gray-400">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal Info -->
+      <div class="mt-8 border-t border-gray-700 pt-4">
+        <p class="text-center text-sm text-gray-400">
+          &copy; 2024 TripAdvisor. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
